@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+.grid {
+    width: 90%;
+    margin: auto;
+}
+
+
+[class*='col-'] {
+    float: left;
+}
+.col-1-header{
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    /* Permalink - use to edit and share this gradient:         http://colorzilla.com/gradient-editor/#b8b8b8+14,a5a5a5+100 */
+background: #b8b8b8; /* Old browsers */
+background: -moz-linear-gradient(top,  #b8b8b8 14%, #a5a5a5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #b8b8b8 14%,#a5a5a5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #b8b8b8 14%,#a5a5a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8b8b8', endColorstr='#a5a5a5',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+.header-text {
+    margin: 40px 20px 30px 10px;
+    text-align: center;
+    font-size: 60px; 
+    font-family: 'Lato';
+    font-weight: 300;
+    
+}
+.header-text a {
+    text-decoration: none;
+    color: #5F5F5F;
+}
+
+.header-logo {
+    position: absolute;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    margin: 0px 0px 0px 230px;
+    bottom: 10px
+    
+    
+    
+}
+.nav-list {
+    width: 100%;
+    float: left;
+    list-style: none;
+}
+
+.nav-list li {
+    float: left;
+    font-family: 'Lato';
+    font-weight: 400;
+    padding: 0px 20px 0px 0px;
+}
+
+.nav-list li a {
+     text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navlist:hover {
+    background-color: #5F5F5F;
+}
+.col-2-3 {
+    width: 76.66%;
+     background-color: #E1E1E1;
+    border-radius: 15px;
+    clear: both;
+}
+
+.col-1-3 {
+    width: 22.33%;
+    background-color: #E1E1E1;
+    border-radius: 15px;
+
+}
+
+.grid:after {
+    content: ""; 
+    display: table;
+    clear: both;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class*='col-'] {
+    padding-right: 0px;
+}
+
+[class*='col-']:last-of-type {
+    padding-right: 0;
+    margin-left: 1%;
+}
