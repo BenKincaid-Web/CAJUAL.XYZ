@@ -1,14 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
+/* --- sets container(.grid) --- */
 .grid {
     width: 90%;
     margin: auto;
 }
 
 
+
+
+/* --- forces all columns to float left --- */
 [class*='col-'] {
     float: left;
 }
+
+
+
+
+/* --- header(.col-1-header) --- */
 .col-1-header{
     position: relative;
     text-decoration: none;
@@ -16,40 +25,43 @@
     height: 160px;
     margin-bottom: 15px;
     border-radius: 20px;
-    /* Permalink - use to edit and share this gradient:         http://colorzilla.com/gradient-editor/#b8b8b8+14,a5a5a5+100 */
-background: #b8b8b8; /* Old browsers */
-background: -moz-linear-gradient(top,  #b8b8b8 14%, #a5a5a5 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #b8b8b8 14%,#a5a5a5 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #b8b8b8 14%,#a5a5a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8b8b8', endColorstr='#a5a5a5',GradientType=0 ); /* IE6-9 */
-
-
+    /* sets bg gradient */
+    background: #b8b8b8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b8b8b8 14%, #a5a5a5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b8b8b8 14%,#a5a5a5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b8b8b8 14%,#a5a5a5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8b8b8', endColorstr='#a5a5a5',GradientType=0 ); /* IE6-9 */
 }
 
 .header-text {
-    margin: 40px 20px 30px 10px;
+    margin: 40px 20px 30px 30px;
     text-align: center;
     font-size: 60px; 
     font-family: 'Lato';
-    font-weight: 300;
-    
+    font-weight: 300;   
 }
-.header-text a {
+
+.header-text a { /* hyperlink reset */
     text-decoration: none;
     color: #5F5F5F;
 }
 
-.header-logo {
+.header-logo { 
     position: absolute;
     overflow: hidden;
     width: 130px;
     height: 130px;
-    margin: 0px 0px 0px 230px;
+    margin: 0px 0px 0px 160px;
     bottom: 10px
-    
-    
+}
+
+a*:active {
     
 }
+
+
+
+/* --- navigation(.nav-list) --- */
 .nav-list {
     width: 100%;
     float: left;
@@ -59,32 +71,86 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8b8b8', end
 .nav-list li {
     float: left;
     font-family: 'Lato';
-    font-weight: 400;
-    padding: 0px 20px 0px 0px;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 0px 20px 5px 0px;
+     position: relative;
 }
 
-.nav-list li a {
-     text-align: center;
+.nav-list li a { /* hyperlink reset/text center */
+    text-align: center;
     text-decoration: none;
-    color: black;
+    color: #5F5F5F ;
+    border-radius: 5px;
+    padding: 6px 4px;
 }
 
-.navlist:hover {
-    background-color: #5F5F5F;
+.nav-list li a:hover {
+    background-color: #D3D3D3;
 }
+
+.nav-list li a:active {
+    background-image:url(http://i.imgur.com/PvYjWmz.gif);
+}
+
+
+
+/* --- content column(.col-2-3) --- */
 .col-2-3 {
     width: 76.66%;
-     background-color: #E1E1E1;
+    background-color: #E1E1E1;
     border-radius: 15px;
-    clear: both;
 }
 
+
+
+
+
+/* --- sidebar column(.col-1-3) --- */
 .col-1-3 {
     width: 22.33%;
     background-color: #E1E1E1;
     border-radius: 15px;
-
 }
+
+.col-1-3 h2 {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #5F5F5F;
+    margin: 20px 35px 13px 35px;
+}
+
+.socialIcons {
+    float: left;
+    margin: 0px 30px 25px 30px;
+    background-color: lightgray;
+}
+
+.socialIcons a img {
+    border-style: dashed;
+    border: 1px;
+    border-color: red;
+    position: relative;
+    margin: 10px 25px 10px 20px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 48px;
+    width: 60px;
+    height 60px;
+}
+.socialIcons a img:hover {
+    background-color: #E1E1E1;
+}
+
+.socialIcons a img:active {
+    background-image:url(http://i.imgur.com/PvYjWmz.gif);
+    opacity: 0/5
+}
+
+
+
+
 
 .grid:after {
     content: ""; 
@@ -92,7 +158,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8b8b8', end
     clear: both;
 }
 
-*, *:after, *:before {
+*, *:after, *:before { /* when we set a width, that element stays that width, despite padding or borders being applied.*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -103,6 +169,90 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8b8b8', end
 }
 
 [class*='col-']:last-of-type {
-    padding-right: 0;
+    padding-right: 0px;
     margin-left: 1%;
 }
+
+
+
+
+
+/* --- media queries ---*/ 
+/* iphone 4/4s portrait & landscape */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      .grid {
+          margin: 0 auto;
+          width: 100%;
+      }
+      .col-1-header {
+          width: 100%;
+          height: 185px;
+          margin-bottom: 0px;
+      }
+      .header-logo {
+          visibility: hidden;
+      }
+      .col-2-3 {
+          
+          width: 100%;
+      }
+      .col-1-3 {
+          width: 100%;
+          clear: both;
+          margin: 20px 0px 0px 0px;
+          
+      }
+      
+      .socialIcons {
+          width: 245px;
+      }
+      
+      .socialIcons a img {
+          margin: 15px 10px 10px 10px   ;
+      }
+      
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      .grid {
+          margin: 0 auto;
+          width: 100%;
+      }
+      .col-1-header {
+          width: 100%;
+          height: 185px;
+          margin-bottom: 0px;
+      }
+      .header-logo {
+          visibility: hidden;
+      }
+      .col-2-3 {
+          
+          width: 100%;
+      }
+      .col-1-3 {
+          width: 100%;
+          clear: both;
+          margin: 20px 0px 0px 0px;
+          
+      }
+      
+      .socialIcons {
+          width: 345px;
+          margin: 5px 0px 40px 60px;
+      }
+      
+      .socialIcons a img {
+          margin: 15px 10px 10px 35px   ;
+      }
+      
