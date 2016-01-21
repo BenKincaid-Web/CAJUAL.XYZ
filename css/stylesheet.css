@@ -55,9 +55,6 @@
     bottom: 10px
 }
 
-a*:active {
-    
-}
 
 
 
@@ -100,8 +97,8 @@ a*:active {
     width: 76.66%;
     background-color: #E1E1E1;
     border-radius: 15px;
+    
 }
-
 
 
 
@@ -172,6 +169,60 @@ a*:active {
     padding-right: 0px;
     margin-left: 1%;
 }
+
+
+
+
+.contact, .mcWrapper {
+    margin: 30px;
+    background-color:lightgray;
+    border-radius: 16px;
+    height: 900px;
+}
+
+.contact {
+    text-align: center;
+    padding: 70px 10px;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.contact > * {
+    padding: 10px;
+    color: #5F5F5F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -255,4 +306,6 @@ a*:active {
       .socialIcons a img {
           margin: 15px 10px 10px 35px   ;
       }
+      
+    
       
