@@ -1,0 +1,15 @@
+  post this below the 'POST vvvv HERE' comment in posts.json. 
+  
+  
+  
+  
+  
+  
+  
+  
+  {
+      "name": "<a href = ' '></a>",
+      "author": "",
+      "date":"",
+      "content":"" 
+      },

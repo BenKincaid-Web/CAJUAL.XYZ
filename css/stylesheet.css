@@ -109,11 +109,37 @@
     text-align: center;
     font-family: 'Lato';
     letter-spacing: 0.7px;
-    line-height: 29px;
+    line-height: 39px;
     border-radius: 20px;
 }
 
+.post-name a {
+    padding: 5px 10px;
+    font-weight: 300;
+    font-size: 32px;
+    margin: 0px 0px 10px 0px;
+    text-decoration: none;
+    color: #212121;
+    border-radius: 15px;
+}
+.post-name a:hover {
+    background-color: #E1E1E1;
+}
 
+.post-author {
+    font-weight: 300;
+    font-size: 22px;
+}
+.post-date {
+    font-weight: 300;
+    font-size: 18px;
+}
+.post-content {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 25px;
+    color: #212121;
+}
 /* --- sidebar column(.col-1-3) --- */
 .col-1-3 {
     width: 22.33%;
