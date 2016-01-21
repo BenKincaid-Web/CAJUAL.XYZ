@@ -101,6 +101,17 @@
 }
 
 
+/* post */
+.post {
+    background-color:lightgray;
+    margin: 20px;
+    padding: 40px 45px 30px 45px;
+    text-align: center;
+    font-family: 'Lato';
+    letter-spacing: 0.7px;
+    line-height: 29px;
+    border-radius: 20px;
+}
 
 
 /* --- sidebar column(.col-1-3) --- */
